@@ -2,8 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import FirebaseContext from "./context/firebase";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <>
+    <FirebaseContext.Provider value={{firebase, FieldValue}} >
+      <App />
+    </FirebaseContext.Provider>
+  </>,
+  document.getElementById("root")
+);
 
 if (module.hot) {
   module.hot.accept();
@@ -13,3 +21,4 @@ if (module.hot) {
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
