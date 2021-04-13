@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -13,6 +15,7 @@ module.exports = {
       white: "#ffffff",
       blue: {
         medium: "#005c98",
+        500: "#3B82F6",
       },
       black: {
         light: "#262626",
@@ -25,6 +28,11 @@ module.exports = {
       },
       red: {
         primary: "#ed4956",
+        lightest: "#FECACA",
+        dark: "#B91C1C",
+      },
+      indigo: {
+        primary: "#4F46E5",
       },
     },
   },
