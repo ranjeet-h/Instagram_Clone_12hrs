@@ -4,8 +4,8 @@ export function seedDatabase(firebase) {
   const users = [
     {
       userId: "UyYiXoAcPFO1ep4wv796CEZHzD03",
-      username: "karl",
-      fullName: "Karl Hadwen",
+      username: "Ranjeet",
+      fullName: "Ranjeet Harishchandre",
       emailAddress: "karlhadwen@gmail.com",
       following: ["2"],
       followers: ["2", "3", "4"],
@@ -13,8 +13,8 @@ export function seedDatabase(firebase) {
     },
     {
       userId: "2",
-      username: "raphael",
-      fullName: "Raffaello Sanzio da Urbino",
+      username: "Pratimesh",
+      fullName: "Pratimesh Shinde",
       emailAddress: "raphael@sanzio.com",
       following: [],
       followers: ["UyYiXoAcPFO1ep4wv796CEZHzD03"],
@@ -22,8 +22,8 @@ export function seedDatabase(firebase) {
     },
     {
       userId: "3",
-      username: "dali",
-      fullName: "Salvador Dalí",
+      username: "Sachin",
+      fullName: "Sachin Shelke",
       emailAddress: "salvador@dali.com",
       following: [],
       followers: ["UyYiXoAcPFO1ep4wv796CEZHzD03"],
@@ -31,8 +31,8 @@ export function seedDatabase(firebase) {
     },
     {
       userId: "4",
-      username: "orwell",
-      fullName: "George Orwell",
+      username: "Rebal",
+      fullName: "Rebal Chavan",
       emailAddress: "george@orwell.com",
       following: [],
       followers: ["UyYiXoAcPFO1ep4wv796CEZHzD03"],
@@ -58,11 +58,11 @@ export function seedDatabase(firebase) {
         likes: [],
         comments: [
           {
-            displayName: 'dali',
+            displayName: 'Pratimesh',
             comment: 'Love this place, looks like my animal farm!'
           },
           {
-            displayName: 'orwell',
+            displayName: 'Sachin',
             comment: 'Would you mind if I used this picture?'
           }
         ],
