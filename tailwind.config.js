@@ -1,3 +1,4 @@
+const { red } = require("tailwindcss/colors");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -16,6 +17,8 @@ module.exports = {
       blue: {
         medium: "#005c98",
         500: "#3B82F6",
+        300: "#93C5FD",
+        200: "#BFDBFE",
       },
       black: {
         light: "#262626",
