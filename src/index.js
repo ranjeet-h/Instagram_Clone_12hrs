@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import FirebaseContext from "./context/firebase";
 import { firebase, FieldValue } from "./lib/firebase";
 import "./styles/app.css";
+import "./styles/custom.css"
 
 ReactDOM.render(
   <>
