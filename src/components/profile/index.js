@@ -1,7 +1,7 @@
 import { useReducer, useEffect } from "react";
 import PropTypes from "prop-types";
 import {
-  getUserByUsername,
+  
   getUserPhotosByUsername,
 } from "../../services/firebase";
 import Header from "./header";

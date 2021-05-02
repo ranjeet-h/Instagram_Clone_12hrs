@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import FirebaseContext from "./../context/firebase";
 import UserContext from "../context/user";
@@ -11,7 +11,7 @@ export default function Header() {
   const history = useHistory();
 
    const {
-     user: { docId, fullName, username, userId, following },
+     user: { username },
    } = useUser();
 
   // console.log("user", user);

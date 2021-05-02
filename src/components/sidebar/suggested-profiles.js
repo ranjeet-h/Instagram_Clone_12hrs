@@ -1,9 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { updateFollowedUserFolowers, updateLoggedInUserFollowing } from '../../services/firebase';
-
+import React from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import {
+  updateFollowedUserFolowers,
+  updateLoggedInUserFollowing,
+} from "../../services/firebase";
 
 export default function SuggestedProfile({
   profileDocId,
@@ -52,4 +54,3 @@ SuggestedProfile.propTypes = {
   userId: PropTypes.string.isRequired,
   loggedInUserDocId: PropTypes.string.isRequired,
 };
-
