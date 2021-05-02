@@ -16,9 +16,11 @@ export default function Comments({
       <div className="p-4 pt-1 pb-4 ">
         {comments.length >= 3 && (
           <p className="text-sm text-gray-base mb-1 cursor-pointer">
-            View all  comments{" "}
+            View all comments{" "}
           </p>
         )}
+
+        {/* if you want to show more comments chnge the values in the slice */}
         {comments.slice(0, 3).map((item) => (
           <p key={`${item.comment} - ${item.diplayName}`} className="mb-1">
             <Link to={`/p/${item.displayName}`}>

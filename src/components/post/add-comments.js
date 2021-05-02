@@ -15,17 +15,20 @@ export default function AddComments({
     user: { displayName },
   } = useContext(UserContext);
 
-  const handleSubmitComment = (event) => {
-    event.preventDefault();
-    setComments([{ displayName, comment }, ...comments]);
-    setComment("");
+const handleSubmitComment = (event) => {
+  event.preventDefault();
 
-    return firebase
-      .firestore()
-      .collection("photos")
-      .doc(docId)
-      .update({ comments: FieldValue.arrayUnion({ displayName, comment }) });
-  };
+  setComments([...comments, { displayName, comment }]);
+  setComment("");
+
+  return firebase
+    .firestore()
+    .collection("photos")
+    .doc(docId)
+    .update({
+      comments: FieldValue.arrayUnion({ displayName, comment }),
+    });
+};
   return (
     <div className="border-t border-gray-primary">
       <form
