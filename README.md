@@ -1,6 +1,6 @@
 # Facebook NextJs Clone
 
-This is a Instagram Clone app for Develpoers, Build with React. Used Tailwind CSS for styling.
+This is a Instagram Clone , Build with React. Used Tailwind CSS for styling.
 
 ## Table of contents
 
