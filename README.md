@@ -1,4 +1,4 @@
-# Facebook NextJs Clone
+# Instagram ReactJs Clone
 
 This is a Instagram Clone , Build with React. Used Tailwind CSS for styling.
 
